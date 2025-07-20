@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = process.env.EXPO_PUBLIC_NEWS_API_KEY;
+const API_KEY = process.env.EXPO_PUBLIC_NEWS_API_KEY || 'b3ab9dd1c97a41468861911e192b01ba';
 
 const BASE_URL = 'https://newsapi.org/v2';
 
