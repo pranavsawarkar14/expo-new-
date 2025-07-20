@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env EXPO_NO_TELEMETRY=1 expo start",
-    "build": "npx expo export",
+    "build": "npx expo export --platform web",
     "deploy": "gh-pages -d web-build",
     "lint": "expo lint",
     "vercel-build": "npx expo export"
@@ -57,6 +57,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
+    "@expo/webpack-config": "^19.0.0",
     "@types/react": "~19.0.10",
     "@types/react-native": "^0.72.8",
     "cross-env": "^7.0.3",

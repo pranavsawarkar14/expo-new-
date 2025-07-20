@@ -1,7 +1,12 @@
 {
-  "buildCommand": "npx expo export",
+  "buildCommand": "npx expo export --platform web",
   "outputDirectory": "dist",
   "devCommand": "npx expo start --web",
   "installCommand": "npm install",
-  "framework": "nextjs"
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
 }
