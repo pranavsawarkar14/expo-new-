@@ -23,8 +23,12 @@ const categories = ['business', 'entertainment', 'general', 'health', 'science',
 
 export const fetchTopHeadlines = async (category?: string) => {
   try {
+    console.log('API_KEY available:', !!API_KEY);
+    console.log('Environment check:', typeof process !== 'undefined' && process.env);
+    
     if (!API_KEY) {
       console.error('News API key is not configured');
+      console.error('Available env vars:', Object.keys(process.env || {}));
       return [];
     }
 

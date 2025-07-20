@@ -42,6 +42,7 @@ const LocationPicker: React.FC<LocationPickerProps> = ({ onLocationSelect, isDar
     
     // India
     { name: 'Delhi', icon: 'city-variant', color: '#FF5722' },
+    { name: 'Pune', icon: 'city-variant', color: '#FF5722' },
     { name: 'Mumbai', icon: 'city-variant', color: '#FF5722' },
     { name: 'Bangalore', icon: 'city-variant', color: '#FF5722' },
     { name: 'Hyderabad', icon: 'city-variant', color: '#FF5722' },
